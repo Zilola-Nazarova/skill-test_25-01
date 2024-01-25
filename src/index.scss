@@ -42,14 +42,26 @@ h2 {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 2.5rem;
+  // line-height: 2.5rem;
   color: $main-blue;
+  position: relative;
+  height: 8rem;
 }
 
-h2 span {
+.number {
   font-size: 8rem;
   opacity: 0.5;
+  line-height: 8rem;
+}
+
+.title {
+  position: absolute;
+  top: 3rem;
+  left: 7.7rem;
 }
 
 p {
   font-family: 'Lato', sans-serif;
+  padding-left: 4rem;
+  line-height: 1.5em;
 }
