@@ -1,8 +1,9 @@
 import styles from '../styles/Footer.module.scss';
+import logo from "../assets/mnt_1.svg"
 
 const Footer = () => (
   <div className={styles.footer}>
-    <p>LOSANGELES MOUNTAINS.</p>
+    <img src={logo}></img>
     <p>COPYRIGHT 2016. ALL RIGHTS RESERVED.</p>
   </div>
 );
