@@ -1,3 +1,147 @@
-.climb {
-  background-color: tan;
+$main-blue: #414f6b;
+$text-grey: #4d4d4d;
+$text-1: #a0a7b5;
+$text-2: #677793;
+$text-footer: #63769d;
+$tab-bg: #b0b4be;
+
+.main {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.1rem;
+  padding: 3rem 10%;
+}
+
+.main span:last-of-type {
+  left: 8.6rem;
+}
+
+.tabs {
+  display: contents;
+}
+
+.tabs li {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  background-color: $tab-bg;
+  color: $main-blue;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.4rem 10%;
+  cursor: pointer;
+}
+
+.tabs li.active {
+  background-color: $main-blue;
+}
+
+.tabs li.active span {
+  color: $tab-bg;
+  border-bottom: 1px solid $tab-bg;
+}
+
+.schedule {
+  width: fit-content;
+  padding: 0.8rem 3rem 2rem 0;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.schedule h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  color: $main-blue;
+  text-transform: uppercase;
+}
+
+.schedule td {
+  font-family: 'Lato', sans-serif;
+}
+
+.schedule tr:first-of-type {
+  margin-right: 1em;
+}
+
+.wrapper {
+  display: none;
+}
+
+.mountains {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper_mobile { 
+  display: none;
+  padding: 0 10%;
+}
+
+.wrapper_mobile.active { 
+  display: block;
+}
+
+@media only screen and (min-width: 780px) {
+  .schedule {
+    padding: 0.8rem 3rem 2rem 3rem;
+    margin-top: 10%;
+  }
+
+  .schedule tr:first-of-type {
+    margin-right: 4em;
+  }
+
+  .main {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main,
+  .wrapper {
+    padding: 3rem 20%;
+  }
+
+  .wrapper_mobile.active { 
+    display: none;
+  }
+
+  .wrapper {
+    display: block;
+    background-image: url(../assets/Climb.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    min-height: 80vh;
+    padding: 3rem 20%;
+    height: 20rem;
+    background-color: rebeccapurple;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: row;
+    padding: 0 20%;
+    padding: 0 10%;
+    height: 2.5rem;
+    background-color: $main-blue;
+    align-items: center;
+    list-style: none;
+  }
+
+  .tabs li {
+    padding: 0.4rem 1.2rem;
+    width: unset;
+    height: 100%;
+    background-color: transparent;
+    color: $tab-bg;
+  }
+  
+  .tabs li.active {
+    background-color: $tab-bg;
+  }
+
+  .tabs li.active span {
+    color: $main-blue;
+    border-bottom: 1px solid $main-blue;
+  }
 }

@@ -32,6 +32,13 @@ const Climb = () => {
             />
           ))}
         </ul>
+        {data.map((mountain, index) => (
+          <MountainMobile
+            data={mountain}
+            index={index}
+            isActive={(index + 1) === activeTab}
+          />
+        ))}
         <Mountain tab={activeTab - 1} />
       </div>
     </section>
