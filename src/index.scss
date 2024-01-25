@@ -1,0 +1,55 @@
+$main-blue: #414f6b;
+$text-grey: #4d4d4d;
+// $text-1: #a0a7b5;
+// $text-2: #677793;
+$text-footer: #63769d;
+$tab-bg: #b0b4be;
+// 'Bebas Neue', sans-serif;
+// 'Lato', sans-serif;
+// 'Oswald', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  height: 100%;
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #fff;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5rem;
+  color: $main-blue;
+}
+
+h2 span {
+  font-size: 8rem;
+  opacity: 0.5;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
