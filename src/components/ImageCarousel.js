@@ -2,9 +2,9 @@ import { v4 as uuidv4 } from 'uuid';
 import {
   useRef,
   useState,
-  createRef,
-  useEffect,
+  createRef
 } from 'react';
+
 import Bullet from './Bullet';
 
 import styles from '../styles/Carousel.module.scss';

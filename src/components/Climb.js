@@ -1,8 +1,11 @@
-import Tab from "./Tab";
-import data from './mountainData'
+import { v4 as uuidv4 } from 'uuid';
 import { useState } from "react";
+
+import data from './mountainData';
+import Tab from './Tab';
 import Mountain from './Mountain';
 import MountainMobile from "./MountainMobile";
+
 import styles from '../styles/Climb.module.scss';
 
 const Climb = () => {
@@ -25,7 +28,7 @@ const Climb = () => {
         <ul className={styles.tabs}>
           {data.map((mountain, index) => (
             <Tab
-              key={index}
+              key={uuidv4()}
               label={index}
               onClick={() => handleTabClick(index)}
               isActive={(index + 1) === activeTab}
@@ -34,6 +37,7 @@ const Climb = () => {
         </ul>
         {data.map((mountain, index) => (
           <MountainMobile
+            key={uuidv4()}
             data={mountain}
             index={index}
             isActive={(index + 1) === activeTab}

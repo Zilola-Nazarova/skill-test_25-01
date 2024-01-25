@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
-import data from './mountainData'
+
+import data from './mountainData';
+
 import styles from '../styles/Climb.module.scss';
 
 const Mountain = ({ tab }) => {

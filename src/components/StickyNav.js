@@ -1,5 +1,7 @@
 import { HashLink as Link } from 'react-router-hash-link';
-import logo from "../assets/mnt_3.svg"
+
+import logo from '../assets/mnt_3.svg';
+
 import styles from '../styles/StickyNav.module.scss';
 
 const StickyNav = () => (

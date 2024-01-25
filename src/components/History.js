@@ -1,4 +1,5 @@
 import ImageCarousel from './ImageCarousel';
+
 import styles from '../styles/History.module.scss';
 
 const History = () => (
