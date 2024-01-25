@@ -8,7 +8,10 @@ $tab-bg: #b0b4be;
 .footer {
   background-color: $main-blue;
   padding: 1rem;
-  height: 4rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer img {
@@ -17,6 +20,7 @@ $tab-bg: #b0b4be;
 
 .footer p {
   color: $text-footer;
+  font-size: 0.8rem;
   font-family: 'Lato', sans-serif;
   font-style: italic;
 }
