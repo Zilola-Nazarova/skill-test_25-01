@@ -1,6 +1,6 @@
 import styles from '../styles/StickyNav.module.scss';
 import { NavLink } from "react-router-dom";
-import logo from "../assets/mnt_icon_5.svg"
+import logo from "../assets/mnt_3.svg"
 
 const StickyNav = () => (
   <div className={styles.sticky}>

@@ -1,5 +1,5 @@
 import styles from '../styles/Footer.module.scss';
-import logo from "../assets/mnt_1.svg"
+import logo from "../assets/mnt_4.svg"
 
 const Footer = () => (
   <div className={styles.footer}>
