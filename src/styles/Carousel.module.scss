@@ -17,11 +17,18 @@ $tab-bg: #b0b4be;
 
 .carousel {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding-bottom: 0.5rem;
   gap: 1rem;
-  flex-wrap: wrap;
+  width: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .nav {

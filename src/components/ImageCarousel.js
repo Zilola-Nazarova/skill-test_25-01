@@ -1,23 +1,31 @@
 import { v4 as uuidv4 } from 'uuid';
-import { useState } from 'react';
-import img_1 from '../assets/carousel_1.png'
-import img_2 from '../assets/carousel_2.png'
-import img_3 from '../assets/carousel_3.png'
-import img_4 from '../assets/carousel_4.png'
+import {
+  useRef,
+  useState,
+  createRef,
+  useEffect,
+} from 'react';
 import Bullet from './Bullet';
 
 import styles from '../styles/Carousel.module.scss';
 
+const images = ['./carousel_1.png', './carousel_2.png', './carousel_3.png', './carousel_4.png', './carousel_5.png', './carousel_6.png']
 
 const ImageCarousel = () => {
   const [tab, setTab] = useState(0);
-
+  const elementsRef = useRef(images.map(() => createRef()));
+  const container = useRef(null);
   const handleClick = (index) => {
-    
+    setTab(index);
+    const ref = elementsRef.current[index];
+    container.current.scrollTo({
+      left: ref.current.offsetLeft,
+      behavior: 'smooth',
+    });
   };
 
   const bullets = [];
-  for (let i = 0; i < 4; i += 1) {
+  for (let i = 0; i < 3; i += 1) {
     bullets.push(
       <Bullet
         key={uuidv4()}
@@ -29,11 +37,15 @@ const ImageCarousel = () => {
 
   return (
   <div className={styles.bg}>
-    <div className={styles.carousel}>
-      <img src={img_1} alt="landscape"></img>
-      <img src={img_2}></img>
-      <img src={img_3}></img>
-      <img src={img_4}></img>
+    <div className={styles.carousel} ref={container}>
+      {images.map((image, i) => (
+        <img
+          src={image}
+          className={styles.preview}
+          ref={elementsRef.current[i]}
+          key={uuidv4()}
+        />
+      ))}
     </div>
     <div className={styles.nav}>
       {bullets}
