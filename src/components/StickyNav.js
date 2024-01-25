@@ -7,7 +7,7 @@ import styles from '../styles/StickyNav.module.scss';
 const StickyNav = () => (
   <div className={styles.sticky}>
     <header>
-      <img src={logo}></img>
+      <img src={logo} alt="Company logo and name" />
       <nav>
         <Link smooth to="#history">
           01. History

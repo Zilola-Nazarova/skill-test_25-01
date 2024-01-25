@@ -9,7 +9,32 @@ import Bullet from './Bullet';
 
 import styles from '../styles/Carousel.module.scss';
 
-const images = ['./carousel_1.png', './carousel_2.png', './carousel_3.png', './carousel_4.png', './carousel_5.png', './carousel_6.png']
+const images = [
+  {
+    source: './carousel_1.png',
+    description: 'Lanscape ...'
+  },
+  {
+    source: './carousel_2.png',
+    description: 'Lanscape ...'
+  },
+  {
+    source: './carousel_3.png',
+    description: 'Lanscape ...'
+  },
+  {
+    source: './carousel_4.png',
+    description: 'Lanscape ...'
+  },
+  {
+    source: './carousel_5.png',
+    description: 'Lanscape ...'
+  },
+  {
+    source: './carousel_6.png',
+    description: 'Lanscape ...'
+  }
+]
 
 const ImageCarousel = () => {
   const [tab, setTab] = useState(0);
@@ -40,7 +65,8 @@ const ImageCarousel = () => {
     <div className={styles.carousel} ref={container}>
       {images.map((image, i) => (
         <img
-          src={image}
+          src={image.source}
+          alt={image.description}
           className={styles.preview}
           ref={elementsRef.current[i]}
           key={uuidv4()}

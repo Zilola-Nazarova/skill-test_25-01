@@ -6,7 +6,7 @@ import styles from '../styles/Hero.module.scss';
 const Hero = () => (
   <div className={styles.hero}>
     <header>
-      <img src={logo}></img>
+      <img src={logo} alt="Company logo" />
       <nav>
         <Link smooth to="#history">
           01. History
