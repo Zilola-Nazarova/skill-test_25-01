@@ -7,18 +7,58 @@ $tab-bg: #b0b4be;
 
 .hero {
   background-image: url(../assets/Hero.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
   min-height: 100vh;
-  // padding: 0 20%;
+  background-repeat: no-repeat;
+  background-position: -220px top;
+  background-size: cover;
 }
 
 .hero header {
-  height: 4rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .hero a {
   color: #fff;
   border-bottom: 1px solid #fff;
+}
+
+@media only screen and (min-width: 380px) {
+  .hero {
+    background-position: -220px top;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .hero {
+    background-position: -210px top;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .hero {
+    background-position: -180px top;
+  }
+
+  .hero header {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .hero {
+    background-position: -130px top;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .hero {
+    background-position: -100px top;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  .hero {
+    background-position: center top;
+  }
 }
