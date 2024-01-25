@@ -15,9 +15,14 @@ $tab-bg: #b0b4be;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // padding: 0;
 }
 
 .paragraph {
-  padding: 0 20%;
+  padding: 3rem 10%;
+}
+
+@media only screen and (min-width: 780px) {
+  .paragraph {
+    padding: 3rem 20%;
+  }
 }

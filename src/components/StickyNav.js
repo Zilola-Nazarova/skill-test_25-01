@@ -1,18 +1,18 @@
-import styles from '../styles/StickyNav.module.scss';
-import { NavLink } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import logo from "../assets/mnt_3.svg"
+import styles from '../styles/StickyNav.module.scss';
 
 const StickyNav = () => (
   <div className={styles.sticky}>
     <header>
       <img src={logo}></img>
       <nav>
-        <NavLink to="history">
+        <Link smooth to="#history">
           01. History
-        </NavLink>
-        <NavLink to="climb">
-          01. Team
-        </NavLink>
+        </Link>
+        <Link smooth to="#climb">
+          02. Team
+        </Link>
       </nav>
     </header>
   </div>

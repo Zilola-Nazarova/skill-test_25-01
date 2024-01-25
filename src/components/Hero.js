@@ -1,6 +1,6 @@
+import { HashLink as Link } from 'react-router-hash-link';
 import styles from '../styles/Hero.module.scss';
 import logo from "../assets/mnt_1.svg"
-import { HashLink as Link } from 'react-router-hash-link';
 
 const Hero = () => (
   <div className={styles.hero}>
@@ -11,7 +11,7 @@ const Hero = () => (
           01. History
         </Link>
         <Link smooth to="#climb">
-          01. Team
+          02. Team
         </Link>
       </nav>
     </header>

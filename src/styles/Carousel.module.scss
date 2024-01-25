@@ -6,7 +6,7 @@ $text-footer: #63769d;
 $tab-bg: #b0b4be;
 
 .bg {
-  padding: 2rem 20% 0;
+  padding: 2rem 10% 0;
   background-color: #414f6bc4;
   height: fit-content;
   display: flex;
@@ -28,4 +28,10 @@ $tab-bg: #b0b4be;
   display: flex;
   gap: 0.5rem;
   height: 2rem;
+}
+
+@media only screen and (min-width: 780px) {
+  .bg {
+    padding: 2rem 20% 0;
+  }
 }
