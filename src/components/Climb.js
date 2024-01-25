@@ -1,4 +1,4 @@
-import styles from '../styles/Climb.module.css';
+import styles from '../styles/Climb.module.scss';
 
 const Climb = () => (
   <div className={styles.climb}>

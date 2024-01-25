@@ -1,4 +1,4 @@
-import styles from '../styles/StickyNav.module.css';
+import styles from '../styles/StickyNav.module.scss';
 
 const StickyNav = () => (
   <div className={styles.hero}>

@@ -1,4 +1,4 @@
-import styles from '../styles/History.module.css';
+import styles from '../styles/History.module.scss';
 
 const History = () => (
   <div className={styles.hero}>
