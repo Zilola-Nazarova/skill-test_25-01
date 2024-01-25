@@ -5,7 +5,27 @@ $text-2: #677793;
 $text-footer: #63769d;
 $tab-bg: #b0b4be;
 
-.carousel {
+.bg {
+  padding: 2rem 20% 0;
   background-color: #414f6bc4;
-  height: 30vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  height: 2rem;
 }
