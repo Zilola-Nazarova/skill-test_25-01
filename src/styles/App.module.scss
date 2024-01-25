@@ -1,3 +1,19 @@
+$main-blue: #414f6b;
+$text-grey: #4d4d4d;
+$text-1: #a0a7b5;
+$text-2: #677793;
+$text-footer: #63769d;
+$tab-bg: #b0b4be;
+
 .app {
   background-color: aqua;
+}
+
+.app > div {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.app > div:nth-child(3) {
+  padding: 0;
 }
